@@ -7,13 +7,13 @@ export default function ProductList() {
   useEffect(() => {
     fetch("http://localhost:8080/api/products")
       .then((res) => res.json())
-      .then((data) => setProducts(data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))));
+      .then((data) => setProducts(data));
   }, []);
 
   return (
     <Card className="p-4 shadow">
       <h2>Product List</h2>
-      <Table striped bordered hover>
+      <Table striped bordered>
         <thead>
           <tr>
             <th>Product Id</th>

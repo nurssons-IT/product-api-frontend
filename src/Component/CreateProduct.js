@@ -44,7 +44,7 @@ console.log(payload)
           <Form.Label>Colours(1=red, 2=green, 3=blue) </Form.Label>
           <Form.Control type="text"  value={colours} onChange={(e) => setColours(e.target.value)} required />
         </Form.Group>
-        <Button variant="primary" type="submit">Create Product</Button>
+        <Button variant="danger " type="submit">Create Product</Button>
       </Form>
     </Card>
   );
